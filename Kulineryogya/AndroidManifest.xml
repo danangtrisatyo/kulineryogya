@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.danang.kulineryogya"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <uses-library android:name="com.google.android.maps" />
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OauthPage" android:label="Oauth">
+    	</activity>
+    	<activity android:name=".TimelineActivity" android:label="Tweets">
+    	</activity>
+    	<activity android:name=".NewTweet" android:label="New Tweet">
+    	</activity>
+    	<activity android:name=".DetailActivity" android:label="Data">
+    	</activity>
+    	<activity android:name=".usingSQLHelper" android:label="Data">
+    	</activity>
+        <activity android:name=".KulineryogyaActivity" android:label="About">
+    	</activity>
+        <activity android:name=".PetaActivity" android:label="About">
+    	</activity>
+    	<activity android:name=".DataActivity" android:label="About">
+    	</activity>
+    	<activity android:name=".ListVenueActivity" android:label="About">
+    	</activity>
+    </application>
+    
+</manifest>

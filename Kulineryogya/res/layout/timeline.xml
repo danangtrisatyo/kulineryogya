@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView 
+    	android:src="@drawable/jog_up_droid" 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/imageView1"
+    	android:padding="5dip"/>
+  <TableLayout 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/tableLayout2" android:layout_height="wrap_content">
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:layout_width="fill_parent" 
+        	android:text=" @JogjaUpdate" 
+        	android:textSize="10pt" 
+        	android:textColor="#000000"
+        	android:id="@+id/textView2" />
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:layout_width="wrap_content" 
+        	android:text="Satu Timeline untuk Semua"
+        	android:textColor="#000000" 
+        	android:id="@+id/textView1" />
+    </TableLayout>
+</LinearLayout>
+	<ListView 
+		android:id="@+id/tweetview" 
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent"/>
+
+</LinearLayout>
